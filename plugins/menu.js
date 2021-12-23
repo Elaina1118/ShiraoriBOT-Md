@@ -24,32 +24,14 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭────ꕥ %me ꕥ────
-│✾ Version: %version
-│✾ Library: Baileys-MD
-│✾ Runtime: %uptime
-╰❑
-╭─❑ 「 INFO USER 」 ❑──
-│ ✾ Name: %name
-│ ✾ Status: Free User
-│ ✾ Limit: %limit
-│ ✾ Money: %money
-│ ✾ Exp: %totalexp
-│ ✾ Level: %level
-│ ✾ Role: %role
-╰❑
-╭─❑ 「 INFORMASI 」 ❑──
-│ Bot ini masih tahap beta
-│ apabila ada bug/eror harap
-│ lapor ke owner
-╰❑
+────ꕥ %me ꕥ────
 %readmore`.trimStart(),
-  header: '╭─「 %category 」',
-  body: '│ • %cmd %islimit %isPremium',
-  footer: '╰────\n',
+  header: '*%category*',
+  body: '• %cmd %islimit %isPremium',
+  footer: '\n',
   after: `
-*%npmname@^%version*
-${'```%npmdesc```'}
+
+${'```Ismail Kurama```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -161,15 +143,15 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '💠 Source Code',
-               url: 'https://github.com/ilmanhdyt/ShiraoriBOT-Md'
+               displayText: '🌹 S U B S C R I B E',
+               url: 'https://youtube.com/c/ismailkurama'
              }
 
            },
              {
              callButton: {
-               displayText: 'Nomor Owner',
-               PhoneNumber: '0813-5104-7727'
+               displayText: '🚬 D O N A S I',
+               PhoneNumber: '083805279906'
              }
 
            },
